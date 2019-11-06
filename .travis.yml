@@ -1,20 +1,13 @@
 language: node_js
-
 node_js:
-  - '9'
-
+- '9'
 cache: yarn
-
 script:
-  - yarn install
-  - yarn run test
-  
-os: windows
-  
+- yarn install
+- yarn run test
 deploy:
-
-provider: heroku
-
-api_key:
-
-secure: "YOUR ENCRYPTED API KEY" 
+  provider: heroku
+  app: mywebpage0
+  on: master
+  api_key:
+    secure: G10XEE8qsS9oAStqbg+PmiO2ukyTRr8OheEIApsxU3d1KLkSU9V0BoCxcRG9l6ruhYhwhc8RfG0Krq9jsXRUtlI48G3AT6EwDnfhzBdUleySFFY0pFScx16uXu+FNORzvyBgU4jE9Veel09kCgf7XZmkVjZ2uiVXPxi9etfANX3qrR2u9uf9bErcpeuLyIWMrOyrAw1xIjVwldqKzl1hIOjcOoc0wvA7pF+hbjiKwVOrvcsrCikHt/Yrvv+nomWKvu6eBbVnX1j1l+Igm8V2kFGLOmhRBFdaCNMGPpcodFZc75NuCg+Dzn9B3E2w8jK8zMiwx2J9qK66EDRMPQ9780DXlEnNE37LhaKbTdozH16s/GuDPZ621PoFF3OIA5YOhq73Fnv1Jhj1GunVaD4uanYZyCCkZHHGbortoSljYQ1WNLv6oAy+/5V2mf3O8cmpAu7JQJgyQuzMUFcAenMZQKAzwrX1u7LdMbcHeLFMApGdRCpYi2r4gDDgky0DppmV+jFvSu9YsuZlMx6/ZDlwvRpuFm5GfG3n3b4pqVn65ZfZE4wDEpk/K7qimIQP7WwCbx5YVFMKuBx5L+XLjEVnUCmW/vytXy4JvsdTjZEh3WAnOO6uUy8BpRiBv3oEjhcLZq+wMsu59TB3TXmOKtr/2I+6Torg+DDA34CEfv7BOcY=
